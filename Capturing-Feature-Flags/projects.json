@@ -1,0 +1,1145 @@
+{
+    "VisualComposer__builder": {
+        "owner": "VisualComposer",
+        "project": "builder",
+        "files": [
+            "env.php",
+            "public/default-variables.js"
+        ],
+        "regex": [
+            ".*\\('([a-zA-Z0-1_]+)',\\s*((true)|(false))"
+        ]
+    },
+    "facebook__react": {
+        "owner": "facebook",
+        "project": "react",
+        "files": [
+            "packages/shared/ReactFeatureFlags.js"
+        ],
+        "regex": [
+            "export\\s+const\\s+([a-zA-Z0-9_\\-]+)\\s*=",
+            "\\s*([a-zA-Z0-9_\\-]+):\\s*((true)|(false))"
+        ]
+    },
+    "UniversityofWarwick__tabula": {
+        "owner": "UniversityofWarwick",
+        "project": "tabula",
+        "files": [
+            "common/src/main/scala/uk/ac/warwick/tabula/Features.scala"
+        ],
+        "regex": [
+            "\\s*.*\\s*var\\s+([a-zA-Z\\-_]+)\\s*=\\s*((false)|(true))",
+            "\\s*@Value\\(\"\\$\\{features\\.([a-zA-Z\\-_]+):\\w*}\"\\)\\s*@BeanProperty\\s+var\\s+\\w+:\\s*Boolean\\s+=\\s+((true)|(false)|(_))",
+            "\\s@\\w*BeanProperty\\s*var\\s+([a-zA-Z\\-_]+):\\s*Boolean\\s*=\\s*((false)|(true)|(_))"
+        ]
+    },
+    "KaurAvneet__Oculo": {
+        "owner": "KaurAvneet",
+        "project": "Oculo",
+        "files": [
+            "app/models/feature_toggle.rb"
+        ],
+        "regex": [
+            "\\s*([A-Z_]+)\\s*[=:]\\s*'.*'"
+        ]
+    },
+    "reddit-archive__reddit": {
+        "owner": "reddit-archive",
+        "project": "reddit",
+        "files": [
+            "r2/example.ini"
+        ],
+        "regex": [
+            "\\s*([a-z]*able_[a-z_]+)\\s*[=]\\s*(true|false)"
+        ]
+    },
+    "PIH__mirebalais-puppet": {
+        "owner": "PIH",
+        "project": "mirebalais-puppet",
+        "files": [
+            "hieradata/common.yaml"
+        ],
+        "regex": [
+            "((?!biometrics_enabled)(?!activitylog_enabled)(?!ssl_use_letsencrypt)(?!pwa_enabled)(?!services_enable)(?!tomcat_enable_http_8080)(?!tomcat_restart_nightly)(?!openmrs_auto_update_database)(?!mysql_binary_logging)[a-z0-9_]+):\\s*(true|false)"
+        ]
+    },
+    "gocd__gocd": {
+        "owner": "gocd",
+        "project": "gocd",
+        "files": [
+            "server/src/main/resources/available.toggles"
+        ],
+        "regex": [
+            "\\s*\"key\":\\s*\"([a-z0-9_]*)\""
+        ]
+    },
+    "Bootleggers-BrokenLab__packages_apps_Launcher3": {
+        "owner": "Bootleggers-BrokenLab",
+        "project": "packages_apps_Launcher3",
+        "files": [
+            "src_flags/com/android/launcher3/config/FeatureFlags.java",
+            "src/com/android/launcher3/config/BaseFlags.java"
+        ],
+        "regex": [
+            "\\s*public\\s*static\\s*.*\\s*TogglableFlag\\s*([A-Za-z0-9_]*)\\s*=\\s*new TogglableFlag",
+            "\\s*public\\s*static\\s*.*\\s*boolean\\s*([A-Za-z0-9_]*)\\s*=\\s*((true)|(false));"
+        ]
+    },
+    "hmcts__probate-frontend": {
+        "owner": "hmcts",
+        "project": "probate-frontend",
+        "files": [
+            "app/config.js"
+        ],
+        "regex": [
+            "\\s*([a-z_]+):\\s*'(?!\\/)(?!true)(?!development)[a-z\\-]+'"
+        ]
+    },
+    "dotnet__roslyn": {
+        "owner": "dotnet",
+        "project": "roslyn",
+        "files": [
+            "src/Workspaces/Core/Portable/Experiments/IExperimentationService.cs"
+        ],
+        "regex": [
+            "\\s*public\\s+const\\s+string\\s+([A-Za-z0-9_]+)\\s*=\\s*"
+        ]
+    },
+    "Yoast__wordpress-seo": {
+        "owner": "Yoast",
+        "project": "wordpress-seo",
+        "files": [
+            "admin/views"
+        ],
+        "regex": [
+            "\\s+'name'\\s*=>.*\\(\\s*'([A-Za-z\\s:]+)'"
+        ]
+    },
+    "education__classroom": {
+        "owner": "education",
+        "project": "classroom",
+        "files": [
+            "app/controllers/application_controller/feature_flags_dependency.rb",
+            "app/controllers/application_controller.rb"
+        ],
+        "regex": [
+            "\\s+.*current_user\\.feature_enabled\\?\\(:([a-z_0-9]+)\\)",
+            "\\s+.*GitHubClassroom\\.flipper\\[:([a-z_0-9]+)\\]"
+        ]
+    },
+    "smbc-digital__iag-webapp": {
+        "owner": "smbc-digital",
+        "project": "iag-webapp",
+        "files": [
+            "src/StockportWebapp/featureToggles.yml"
+        ],
+        "regex": [
+            "\\s*([A-Za-z_0-9]+):\\s*((true)|(false))"
+        ]
+    },
+    "signalapp__Signal-iOS": {
+        "owner": "signalapp",
+        "project": "Signal-iOS",
+        "files": [
+            "SignalServiceKit/src/Util/FeatureFlags.swift"
+        ],
+        "regex": [
+            ".*\\s+let\\s+([a-zA-Z0-9_]+)\\s*=\\s*",
+            ".*\\s+var\\s+([a-zA-Z0-9_]+):\\s*Bool"
+        ]
+    },
+    "fabric8-ui__fabric8-ui": {
+        "owner": "fabric8-ui",
+        "project": "fabric8-ui",
+        "files": [
+            "."
+        ],
+        "regex": [
+            ".*featureName\\s*=\\s*\"([A-Za-z\\.0-9_]+)\""
+        ]
+    },
+    "influxdata__influxdb": {
+        "owner": "influxdata",
+        "project": "influxdb",
+        "files": [
+            "ui/src/shared/utils/featureFlag.ts"
+        ],
+        "regex": [
+            "\\s*([A-Za-z\\.0-9_]+):\\s*\\w*,?"
+        ]
+    },
+    "letsencrypt__boulder": {
+        "owner": "letsencrypt",
+        "project": "boulder",
+        "files": [
+            "features/features.go"
+        ],
+        "regex": [
+            "\\s*([A-Za-z\\.0-9_]+):\\s*((false)|(true))"
+        ]
+    },
+    "DoSomething__phoenix": {
+        "owner": "DoSomething",
+        "project": "phoenix",
+        "files": [
+            "lib/themes/dosomething/paraneue_dosomething/paraneue_dosomething.info"
+        ],
+        "regex": [
+            "\\s*settings\\[([a-zAZ0-9_]+)\\]\\s*=\\s*[01]"
+        ]
+    },
+    "wordpress-mobile__WordPress-Android": {
+        "owner": "wordpress-mobile",
+        "project": "WordPress-Android",
+        "files": [
+            "WordPress/build.gradle"
+        ],
+        "regex": [
+            "\\s*buildConfigField\\s+\"boolean\",\\s*\"([a-zA-Z0-9_]+)\",\\s*\""
+        ]
+    },
+    "rets-ci__wp-rets-client": {
+        "owner": "rets-ci",
+        "project": "wp-rets-client",
+        "files": [
+            "composer.json"
+        ],
+        "regex": [
+            "\\s*\"constant\":\\s*\"([a-zA-Z0-9_/\\-\\s]+)\","
+        ]
+    },
+    "neo4j__neo4j": {
+        "owner": "neo4j",
+        "project": "neo4j",
+        "files": [
+            "."
+        ],
+        "regex": [
+            ".*FeatureToggles\\.flag\\(.*\"([a-zA-Z\\-_]+)\""
+        ]
+    },
+    "bundler__bundler": {
+        "owner": "bundler",
+        "project": "bundler",
+        "files": [
+            "lib/bundler/feature_flag.rb"
+        ],
+        "regex": [
+            "\\s*settings_flag\\(?\\s*:([a-zA-Z0-9_]+)\\)?"
+        ]
+    },
+    "SuperiorOS__android_external_e2fsprogs": {
+        "owner": "SuperiorOS",
+        "project": "android_external_e2fsprogs",
+        "files": [
+            "lib/e2p/feature.c"
+        ],
+        "regex": [
+            ".*\"([a-zA-Z0-9_]+)\"\\s*}"
+        ]
+    },
+    "uktrade__great-domestic-ui": {
+        "owner": "uktrade",
+        "project": "great-domestic-ui",
+        "files": [
+            "conf/settings.py"
+        ],
+        "regex": [
+            "\\s*'([a-zA-Z0-9_]+)':\\s*env\\.bool"
+        ]
+    },
+    "ithaka__aiw-ui": {
+        "owner": "ithaka",
+        "project": "aiw-ui",
+        "files": [
+            "src/app/_services/flag.service.ts"
+        ],
+        "regex": [
+            "\\s*([a-zA-Z0-9]+)\\?:\\s*",
+            "\\s*public\\s+([a-zA-Z0-9]+):\\s*boolean\\s*=\\s*((true)|(false))"
+        ]
+    },
+    "Aperta-project__Aperta": {
+        "owner": "Aperta-project",
+        "project": "Aperta",
+        "files": [
+            "lib/tasks/create_feature_flags.rake"
+        ],
+        "regex": [
+            "\\s*\"([A-Za-z0-9_]+)\""
+        ]
+    },
+    "Audiobay__audiobaymarketplace": {
+        "owner": "Audiobay",
+        "project": "audiobaymarketplace",
+        "files": [
+            "app/services/feature_flag_service/store.rb"
+        ],
+        "regex": [
+            "\\s*:([a-zA-Z0-9_]*),?"
+        ]
+    },
+    "instructure__canvas-lms": {
+        "owner": "instructure",
+        "project": "canvas-lms",
+        "files": [
+            "config/feature_flags"
+        ],
+        "regex": [
+            "([\\w_]*):"
+        ]
+    },
+    "ceph__ceph": {
+        "owner": "ceph",
+        "project": "ceph",
+        "files": [
+            "doc/cephfs/experimental-features.rst"
+        ],
+        "regex": [
+            ".*[\"'`]+([\\w]+)[\"'`]+\\s*flag"
+        ]
+    },
+    "cfpb__cfgov-refresh": {
+        "owner": "cfpb",
+        "project": "cfgov-refresh",
+        "files": [
+            "cfgov/cfgov/settings/base.py"
+        ],
+        "regex": [
+            "\\s*'([A-Z0-9_]+)':\\s*\\["
+        ]
+    },
+    "wordpress-mobile__WordPress-iOS": {
+        "owner": "wordpress-mobile",
+        "project": "WordPress-iOS",
+        "files": [
+            "WordPress/Classes/Utility/BuildInformation/FeatureFlag.swift"
+        ],
+        "regex": [
+            "\\s*case\\s+((?!exampleFeature)[a-zA-Z]+)"
+        ]
+    },
+    "rogerwang__WebKit_trimmed": {
+        "owner": "rogerwang",
+        "project": "WebKit_trimmed",
+        "files": [
+            "Source/WebCore/Configurations/FeatureDefines.xcconfig"
+        ],
+        "regex": [
+            "([0-9A-Za-z_]*)\\s*="
+        ]
+    },
+    "juju__juju": {
+        "owner": "juju",
+        "project": "juju",
+        "files": [
+            "feature/flags.go"
+        ],
+        "regex": [
+            "\\s*const\\s*\\w*\\s*=\\s*\"([\\w-]*)\""
+        ]
+    },
+    "sharetribe__sharetribe": {
+        "owner": "sharetribe",
+        "project": "sharetribe",
+        "files": [
+            "app/services/feature_flag_service/store.rb"
+        ],
+        "regex": [
+            "\\s*:([a-z_0-9]+)"
+        ]
+    },
+    "getsentry__sentry": {
+        "owner": "getsentry",
+        "project": "sentry",
+        "files": [
+            "src/sentry/conf/server.py"
+        ],
+        "regex": [
+            "\\s*[\\\"'](?!propagate)(?!debug)(?!pull)([a-z0-9:\\-]*)[\\\"']\\s*:\\s*((True)|(False))"
+        ]
+    },
+    "lupapiste__lupapiste": {
+        "owner": "lupapiste",
+        "project": "lupapiste",
+        "files": [
+            "resources/dev.properties"
+        ],
+        "regex": [
+            "\\s*feature\\.([a-z\\-]+)\\s+((true)|(false))"
+        ]
+    },
+    "ORCID__ORCID-Source": {
+        "owner": "ORCID",
+        "project": "ORCID-Source",
+        "files": [
+            "orcid-core/src/main/java/org/orcid/core/togglz/Features.java"
+        ],
+        "regex": [
+            "\\s*@Label\\(\\\"([\\w\\s\\.:,\\/\\\\_]*)\\\"\\)"
+        ]
+    },
+    "CenterForOpenScience__osf.io": {
+        "owner": "CenterForOpenScience",
+        "project": "osf.io",
+        "files": [
+            "osf/features.py"
+        ],
+        "regex": [
+            "([\\w]*)\\s*=\\s*"
+        ]
+    },
+    "circleci__frontend": {
+        "owner": "circleci",
+        "project": "frontend",
+        "files": [
+            "."
+        ],
+        "regex": [
+            ".*\\(feature/enabled\\?\\s*:([a-z\\-]+)\\)"
+        ]
+    },
+    "cloudfoundry__cloud_controller_ng": {
+        "owner": "cloudfoundry",
+        "project": "cloud_controller_ng",
+        "files": [
+            "app/models/runtime/feature_flag.rb"
+        ],
+        "regex": [
+            "\\s*([a-z0-9A-Z_]+):\\s*((true)|(false))"
+        ]
+    },
+    "dimagi__commcare-hq": {
+        "owner": "dimagi",
+        "project": "commcare-hq",
+        "files": [
+            "corehq/toggles.py"
+        ],
+        "regex": [
+            "\\s*([\\w]*)\\s*=\\s*\\w*Toggle\\("
+        ]
+    },
+    "alphagov__govuk-puppet": {
+        "owner": "alphagov",
+        "project": "govuk-puppet",
+        "files": [
+            "hieradata/development.yaml"
+        ],
+        "regex": [
+            "govuk::apps::([a-z_]+)::enabled:\\s*((true)|(false))"
+        ]
+    },
+    "emberjs__ember.js": {
+        "owner": "emberjs",
+        "project": "ember.js",
+        "files": [
+            "packages/@ember/canary-features/index.ts"
+        ],
+        "regex": [
+            "\\s*([A-Z_]*):\\s*((true)|(false)|(null))"
+        ]
+    },
+    "hypothesis__h": {
+        "owner": "hypothesis",
+        "project": "h",
+        "files": [
+            "h/models/feature.py"
+        ],
+        "regex": [
+            "\\s*['\\\"]([a-z_]+)['\\\"]:"
+        ]
+    },
+    "keybase__client": {
+        "owner": "keybase",
+        "project": "client",
+        "files": [
+            "shared/util/feature-flags.native.tsx"
+        ],
+        "regex": [
+            "\\s*([a-zA-Z0-9]+):\\s*.*"
+        ]
+    },
+    "stonedpebbles__inventory-check": {
+        "owner": "stonedpebbles",
+        "project": "inventory-check",
+        "files": [
+            "app/modules/core/featureToggle/featureToggle.service.js"
+        ],
+        "regex": [
+            "\\s*(?!method)[\\w\\d]+:\\s*'(\\S*)'"
+        ]
+    },
+    "dantehemerson__gitter-webap-mirror": {
+        "owner": "dantehemerson",
+        "project": "gitter-webap-mirror",
+        "files": [
+            "scripts/utils/feature-toggle.js"
+        ],
+        "regex": [
+            "\\s*\\.option\\('([a-z\\-0-9]*)'"
+        ]
+    },
+    "SIGLUS__lmis-moz-mobile": {
+        "owner": "SIGLUS",
+        "project": "lmis-moz-mobile",
+        "files": [
+            "app/src/main/res/values/feature_toggle_config.xml"
+        ],
+        "regex": [
+            "\\s*<bool\\s+name=\"([a-z_]+)\">((true)|(false))</bool>"
+        ]
+    },
+    "live-clones__launchpad": {
+        "owner": "live-clones",
+        "project": "launchpad",
+        "files": [
+            "lib/lp/services/features/flags.py"
+        ],
+        "regex": [
+            "\\s*\\('([a-z\\._]*)',"
+        ]
+    },
+    "LineageOS__android_frameworks_base": {
+        "owner": "LineageOS",
+        "project": "android_frameworks_base",
+        "files": [
+            "core/java/android/util/FeatureFlagUtils.java"
+        ],
+        "regex": [
+            "\\s*DEFAULT_FLAGS.put\\(\\\"(\\S+)\\\",\\s*\\\"((true)|(false))\\\"\\);"
+        ]
+    },
+    "CodeNow__runnable-angular": {
+        "owner": "CodeNow",
+        "project": "runnable-angular",
+        "files": [
+            "client/services/featureFlagService.js"
+        ],
+        "regex": [
+            "\\s*(\\w+):\\s*((true)|(false))"
+        ]
+    },
+    "edx__edx-platform": {
+        "owner": "edx",
+        "project": "edx-platform",
+        "files": [
+            "."
+        ],
+        "regex": [
+            "\\s*([A-Z_]+)\\s*=\\s*(Course)?WaffleFlag\\("
+        ]
+    },
+    "ets-berkeley-edu__calcentral": {
+        "owner": "ets-berkeley-edu",
+        "project": "calcentral",
+        "files": [
+            "config/settings.yml"
+        ],
+        "regex": [
+            "\\s*(?!use_term_definitions_json_file)(?!cas_use_name_identifier)(?!serve_static_assets)(?!fake_cas)(?!fake_proxies_enabled)(?!fake)(?!mixed_sis_user_id)(?!inactivate_expired_users)(?!delete_bad_emails)(?!import_zipped_csvs)([a-z_]+):\\s*((true)|(false))"
+        ]
+    },
+    "moneyadviceservice__frontend": {
+        "owner": "moneyadviceservice",
+        "project": "frontend",
+        "files": [
+            "config/features.yml.sample"
+        ],
+        "regex": [
+            "\\s*([a-z_]+):\\s*((true)|(false))"
+        ]
+    },
+    "rust-lang__rust": {
+        "owner": "rust-lang",
+        "project": "rust",
+        "files": [
+            "src/libstd/lib.rs"
+        ],
+        "regex": [
+            "#!\\[feature\\(([a-z_]+)\\)\\]"
+        ]
+    },
+    "franbow__shopware": {
+        "owner": "franbow",
+        "project": "shopware",
+        "files": [
+            "src/Core/Flag/"
+        ],
+        "regex": [
+            "\\s*FeatureConfig::registerFlag\\('([a-zA-Z0-9\\-_]+)',"
+        ]
+    },
+    "WebKit__webkit": {
+        "owner": "WebKit",
+        "project": "webkit",
+        "files": [
+            "Source/WebCore/page/RuntimeEnabledFeatures.h"
+        ],
+        "regex": [
+            "\\s* bool m_([a-zA-Z]+)\\s*{\\s*((true)|(false))\\s*}\\s*;"
+        ]
+    },
+    "Automattic__wp-calypso": {
+        "owner": "Automattic",
+        "project": "wp-calypso",
+        "files": [
+            "config/development.json"
+        ],
+        "regex": [
+            "\\s*\"(?!rtl)(?!\\w*_enabled)([\\w\\-\\/]*)\"\\s*:\\s*((true)|(false))"
+        ]
+    },
+    "department-of-veterans-affairs__vets-website": {
+        "owner": "department-of-veterans-affairs",
+        "project": "vets-website",
+        "files": [
+            "src/site/utilities/featureFlags.js",
+            "src/platform/utilities/feature-toggles/featureFlagNames.js"
+        ],
+        "regex": [
+            "\\s*([A-Z_]+):"
+        ]
+    },
+    "kubernetes__kubernetes": {
+        "owner": "kubernetes",
+        "project": "kubernetes",
+        "files": [
+            "pkg/features/kube_features.go"
+        ],
+        "regex": [
+            "\\s*([\\.\\w]*):\\s*{\\s*Default:\\s*((true)|(false))"
+        ]
+    },
+    "chromium__chromium": {
+        "owner": "chromium",
+        "project": "chromium",
+        "files": [
+            "android_webview/common/aw_features.cc",
+            "ash/public/cpp/app_list/app_list_features.cc",
+            "ash/public/cpp/ash_features.cc",
+            "base/android/cpu_features.cc",
+            "base/task/task_features.cc",
+            "base/time/time_win_features.cc",
+            "cc/base/features.cc",
+            "chrome/browser/browser_features.cc",
+            "chrome/browser/chromeos/crostini/crostini_features.cc",
+            "chrome/browser/chromeos/crostini/fake_crostini_features.cc",
+            "chrome/browser/heavy_ad_intervention/heavy_ad_features.cc",
+            "chrome/browser/notifications/chime/android/features.cc",
+            "chrome/browser/notifications/scheduler/public/features.cc",
+            "chrome/browser/performance_manager/graph/policies/policy_features.cc",
+            "chrome/browser/predictors/predictors_features.cc",
+            "chrome/browser/resource_coordinator/tab_manager_features.cc",
+            "chrome/browser/resource_coordinator/tab_ranker/tab_features.cc",
+            "chrome/browser/resource_coordinator/tab_ranker/window_features.cc",
+            "chrome/browser/safe_browsing/browser_features.cc",
+            "chrome/browser/search/ntp_features.cc",
+            "chrome/browser/share/features.cc",
+            "chrome/browser/sharing/features.cc",
+            "chrome/browser/supervised_user/supervised_user_features.cc",
+            "chrome/browser/ui/ui_features.cc",
+            "chrome/common/chrome_features.cc",
+            "chrome/renderer/safe_browsing/features.cc",
+            "chromecast/base/cast_features.cc",
+            "chromeos/constants/chromeos_features.cc",
+            "chromeos/services/assistant/public/features.cc",
+            "components/arc/arc_features.cc",
+            "components/autofill/core/common/autofill_features.cc",
+            "components/autofill/core/common/autofill_payments_features.cc",
+            "components/autofill_assistant/browser/features.cc",
+            "components/browser_watcher/features.cc",
+            "components/browsing_data/core/features.cc",
+            "components/content_capture/common/content_capture_features.cc",
+            "components/content_settings/core/common/features.cc",
+            "components/data_reduction_proxy/core/common/data_reduction_proxy_features.cc",
+            "components/dom_distiller/core/dom_distiller_features.cc",
+            "components/dom_distiller/core/page_features.cc",
+            "components/download/public/background_service/features.cc",
+            "components/download/public/common/download_features.cc",
+            "components/favicon/core/features.cc",
+            "components/games/core/games_features.cc",
+            "components/gcm_driver/features.cc",
+            "components/mirroring/service/features.cc",
+            "components/network_session_configurator/common/network_features.cc",
+            "components/ntp_snippets/features.cc",
+            "components/ntp_tiles/features.cc",
+            "components/omnibox/common/omnibox_features.cc",
+            "components/open_from_clipboard/clipboard_recent_content_features.cc",
+            "components/optimization_guide/optimization_guide_features.cc",
+            "components/page_load_metrics/browser/observers/use_counter/ukm_features.cc",
+            "components/password_manager/core/common/password_manager_features.cc",
+            "components/payments/core/features.cc",
+            "components/payments/core/payments_experimental_features.cc",
+            "components/policy/core/common/features.cc",
+            "components/previews/core/previews_features.cc",
+            "components/printing/browser/features.cc",
+            "components/safe_browsing/features.cc",
+            "components/search_provider_logos/features.cc",
+            "components/security_interstitials/core/features.cc",
+            "components/security_state/core/features.cc",
+            "components/send_tab_to_self/features.cc",
+            "components/signin/ios/browser/features.cc",
+            "components/spellcheck/common/spellcheck_features.cc",
+            "components/subresource_filter/core/browser/subresource_filter_features.cc",
+            "components/subresource_filter/core/common/common_features.cc",
+            "components/ukm/ios/features.cc",
+            "components/viz/common/features.cc",
+            "content/child/runtime_features.cc",
+            "content/public/common/content_features.cc",
+            "device/base/features.cc",
+            "device/fido/features.cc",
+            "device/gamepad/public/cpp/gamepad_features.cc",
+            "extensions/common/extension_features.cc",
+            "gin/gin_features.cc",
+            "gpu/config/gpu_finch_features.cc",
+            "ios/chrome/browser/browsing_data/browsing_data_features.cc",
+            "ios/chrome/browser/metrics/features.cc",
+            "ios/chrome/browser/ntp/features.cc",
+            "ios/chrome/browser/passwords/password_manager_features.cc",
+            "ios/chrome/browser/ssl/captive_portal_features.cc",
+            "ios/chrome/browser/web/features.cc",
+            "media/audio/audio_features.cc",
+            "media/capture/video/chromeos/public/cros_features.cc",
+            "mojo/public/cpp/bindings/features.cc",
+            "net/base/features.cc",
+            "pdf/pdfium/pdfium_unsupported_features.cc",
+            "pdf/pdf_features.cc",
+            "printing/common/printing_features.cc",
+            "services/device/public/cpp/device_features.cc",
+            "services/media_session/public/cpp/features.cc",
+            "services/network/public/cpp/features.cc",
+            "services/service_manager/sandbox/features.cc",
+            "services/tracing/public/cpp/tracing_features.cc",
+            "sql/sql_features.cc",
+            "storage/browser/file_system/file_system_features.cc",
+            "storage/browser/quota/quota_features.cc",
+            "third_party/blink/common/features.cc",
+            "third_party/blink/renderer/core/dom/context_features.cc",
+            "third_party/blink/renderer/core/exported/web_context_features.cc",
+            "third_party/blink/renderer/core/frame/hosts_using_features.cc",
+            "third_party/blink/renderer/core/origin_trials/navigation_origin_trial_features.cc",
+            "third_party/blink/renderer/platform/bindings/origin_trial_features.cc",
+            "third_party/blink/renderer/platform/exported/web_runtime_features.cc",
+            "third_party/blink/renderer/platform/fonts/typesetting_features.cc",
+            "third_party/blink/renderer/platform/scheduler/common/features.cc",
+            "third_party/leveldatabase/leveldb_features.cc",
+            "ui/accessibility/accessibility_features.cc",
+            "ui/base/ui_base_features.cc",
+            "ui/display/display_features.cc",
+            "ui/events/blink/blink_features.cc",
+            "ui/events/ozone/features.cc",
+            "ui/gl/gl_features.cc",
+            "ui/native_theme/native_theme_features.cc",
+            "ui/views/views_features.cc",
+            "weblayer/common/features.cc"
+        ],
+        "regex": [
+            "\\s*const\\s*base::Feature\\s*([\\w]*)"
+        ]
+    },
+    "vespa-engine__vespa": {
+        "owner": "vespa-engine",
+        "project": "vespa",
+        "files": [
+            "flags/src/main/java/com/yahoo/vespa/flags/Flags.java"
+        ],
+        "regex": [
+            ".*Unbound\\w*Flag ([\\w]*) = define\\w*Flag\\("
+        ]
+    },
+    "kangdroid-project__platform_cts": {
+        "owner": "kangdroid-project",
+        "project": "platform_cts",
+        "files": [
+            "apps/CtsVerifier/src/com/android/cts/verifier/features/FeatureSummaryActivity.java"
+        ],
+        "regex": [
+            "\\s*new\\s+Feature\\(\\\"?([\\w.]*)\\\"?,"
+        ]
+    },
+    "transcom__mymove": {
+        "owner": "transcom",
+        "project": "mymove",
+        "files": [
+            "src/shared/featureFlags.js"
+        ],
+        "regex": [
+            "\\s*([\\w]*):\\s*((true)|(false))"
+        ]
+    },
+    "xapi-project__xen-api": {
+        "owner": "xapi-project",
+        "project": "xen-api",
+        "files": [
+            "ocaml/xapi-types/features.mli"
+        ],
+        "regex": [
+            "\\s*\\|\\s*([\\w]*)\\s*\\("
+        ]
+    },
+    "ZeitOnline__vivi": {
+        "owner": "ZeitOnline",
+        "project": "vivi",
+        "files": [
+            "core/src/zeit/cms/content/feature-toggle.xml"
+        ],
+        "regex": [
+            "\\s*<([\\w]*)>((true)|(false))"
+        ]
+    },
+    "carbon-design-system__carbon": {
+        "owner": "carbon-design-system",
+        "project": "carbon",
+        "files": [
+            "packages/components/src/globals/scss/_feature-flags.scss",
+            "ackages/components/src/globals/js/feature-flags.js",
+            "packages/react/src/internal/FeatureFlags.js"
+        ],
+        "regex": [
+            "\\s*([\\w\\-]*):\\s*((true)|(false))",
+            "export\\s+const\\s+([\\w]*)\\s*=\\s*((true)|(false))",
+            "exports\\.([\\w]*)\\s*=\\s*((true)|(false))"
+        ]
+    },
+    "alphagov__digitalmarketplace-supplier-frontend": {
+        "owner": "alphagov",
+        "project": "digitalmarketplace-supplier-frontend",
+        "files": [
+            "config.py"
+        ],
+        "regex": [
+            "\\s*FEATURE_FLAGS_([\\w]*)\\s*=\\s*((True)|(False))"
+        ]
+    },
+    "kubernetes__kops": {
+        "owner": "kubernetes",
+        "project": "kops",
+        "files": [
+            "pkg/featureflag/featureflag.go"
+        ],
+        "regex": [
+            "\\s*([\\w]*)\\s*=\\s*New\\(\\\"\\w*\\\""
+        ]
+    },
+    "sonaproject__tempest": {
+        "owner": "sonaproject",
+        "project": "tempest",
+        "files": [
+            "tempest/config.py"
+        ],
+        "regex": [
+            "\\s*return\\s*self.get\\(\\\"([\\w]*)\\\", \\s*'((ture)|(false))'",
+            "\\s*cfg\\.BoolOpt\\('([\\w]*)'"
+        ]
+    },
+    "uktrade__data-hub-frontend": {
+        "owner": "uktrade",
+        "project": "data-hub-frontend",
+        "files": [
+            "."
+        ],
+        "regex": [
+            ".*if\\s+features\\.([\\w\\-]+)",
+            ".*features\\['([\\w\\-]*)']"
+        ]
+    },
+    "loomnetwork__loomchain": {
+        "owner": "loomnetwork",
+        "project": "loomchain",
+        "files": [
+            "features/features.go"
+        ],
+        "regex": [
+            "\\s*([\\w]+)\\s*=\\s*\\\""
+        ]
+    },
+    "desktop__desktop": {
+        "owner": "desktop",
+        "project": "desktop",
+        "files": [
+            "app/src/lib/feature-flag.ts"
+        ],
+        "regex": [
+            "\\s+export\\s+function\\s+enable([\\w]*)\\(\\):\\s*boolean\\s*{"
+        ]
+    },
+    "4teamwork__opengever.core": {
+        "owner": "4teamwork",
+        "project": "opengever.core",
+        "files": [
+            "opengever/base/configuration.py",
+            "opengever/api/config.py"
+        ],
+        "regex": [
+            "\\s*features\\['(\\w*)'\\]",
+            "\\s*config\\['features'\\]\\['(\\w*)'\\]"
+        ]
+    },
+    "newrelic__node-newrelic": {
+        "owner": "newrelic",
+        "project": "node-newrelic",
+        "files": [
+            "lib/feature_flags.js"
+        ],
+        "regex": [
+            "\\s*(\\w+):\\s*((true)|(false))"
+        ]
+    },
+    "emberjs__data": {
+        "owner": "emberjs",
+        "project": "data",
+        "files": [
+            "packages/canary-features/addon/default-features.ts",
+            "packages/canary-features/addon/index.js"
+        ],
+        "regex": [
+            "\\s*(\\w+):\\s*((true)|(false)|(null))",
+            "export\\s+const\\s+(\\w*)\\s*=\\s*featureValue"
+        ]
+    },
+    "zalando__nakadi": {
+        "owner": "zalando",
+        "project": "nakadi",
+        "files": [
+            "src/main/java/org/zalando/nakadi/service/FeatureToggleService.java"
+        ],
+        "regex": [
+            "\\s*(\\w+)\\(\\\"\\w+\\\"(, false)?(, true)?\\)",
+            ".*Feature\\s+(\\w+)\\s*="
+        ]
+    },
+    "all-of-us__workbench": {
+        "owner": "all-of-us",
+        "project": "workbench",
+        "files": [
+            "ui/src/environments/environment.prod.ts"
+        ],
+        "regex": [
+            "\\s*enable(\\w*)"
+        ]
+    },
+    "DFE-Digital__schools-experience": {
+        "owner": "DFE-Digital",
+        "project": "schools-experience",
+        "files": [
+            "config/environments/development.rb"
+        ],
+        "regex": [
+            "\\s+((?![a-z_]+[: \\.]+)[a-z]+_[a-z_]+)"
+        ]
+    },
+    "matrix-org__matrix-react-sdk": {
+        "owner": "matrix-org",
+        "project": "matrix-react-sdk",
+        "files": [
+            "src/settings/Settings.js"
+        ],
+        "regex": [
+            "\\s*\\\"feature_(\\w+)\\\":"
+        ]
+    },
+    "spinnaker__deck": {
+        "owner": "spinnaker",
+        "project": "deck",
+        "files": [
+            "settings.js"
+        ],
+        "regex": [
+            "\\s+(?!enabled)(?!authEnabled)(?!reduxLogger)(?!stagesEnabled)(?!showAllConfigs)(?!templatesEnabled)(?!checkForUpdates)(?!debugEnabled)(?!disableManualOidcDialog)(?!inferInternalFlagFromSubnet)(?!useAmiBlockDeviceMappings)(?!associatePublicIpAddress)(?!localSSDSupported)(?!required)([a-zA-Z0-9]+): ((false,)|(true,)|([a-zA-Z0-9]+Enabled)|(displayTimestampsInUserLocalTime))"
+        ]
+    },
+    "openstack__devstack": {
+        "owner": "openstack",
+        "project": "devstack",
+        "files": [
+            "lib/tempest"
+        ],
+        "regex": [
+            "\\s*iniset\\s+\\$TEMPEST_CONFIG\\s+\\w*-feature-enabled\\s+(\\w+)\\s+"
+        ]
+    },
+    "gitlabhq__gitlabhq": {
+        "owner": "gitlabhq",
+        "project": "gitlabhq",
+        "files": [
+            "."
+        ],
+        "regex": [
+            "\\s*push_frontend_feature_flag\\(:(?!vim_bindings)(\\w+)[,\\)]"
+        ]
+    },
+    "zooniverse__Panoptes": {
+        "owner": "zooniverse",
+        "project": "Panoptes",
+        "files": [
+            "."
+        ],
+        "regex": [
+            ".*Panoptes\\.flipper\\[\\\"?:?(?!feature)(?!feature_name)(?!experiment_name)([\\w_]*)\\\"?\\]\\.(enable|disable)"
+        ]
+    },
+    "PIH__openmrs-module-mirebalais": {
+        "owner": "PIH",
+        "project": "openmrs-module-mirebalais",
+        "files": [
+            "."
+        ],
+        "regex": [
+            ".*addFeatureToggleTo\\w+\\(.*\\\"([\\w_]+)\\\"\\)",
+            ".*\\.isFeatureEnabled\\(\\\"([\\w_]+)\\\"\\)"
+        ]
+    },
+    "travis-ci__travis-api": {
+        "owner": "travis-ci",
+        "project": "travis-api",
+        "files": [
+            "."
+        ],
+        "regex": [
+            ".*if\\s+ENV\\['(?![\\w_]*ENV)([\\w_]+)']"
+        ]
+    },
+    "hmrc__mobile-help-to-save": {
+        "owner": "hmrc",
+        "project": "mobile-help-to-save",
+        "files": [
+            "conf/application.conf"
+        ],
+        "regex": [
+            "\\s*(\\w+)Enabled"
+        ]
+    },
+    "dialogs__api-schema": {
+        "owner": "dialogs",
+        "project": "api-schema",
+        "files": [
+            "docs/feature-flags.schema.json"
+        ],
+        "regex": [
+            ".*\\\"([\\w.]+(Enabled?|Active))\\\":\\s*{"
+        ]
+    },
+    "tokio-rs__tracing": {
+        "owner": "tokio-rs",
+        "project": "tracing",
+        "files": [
+            "tracing-futures/Cargo.toml"
+        ],
+        "regex": [
+            "([\\w-]+)\\s*=\\s*{.*optional"
+        ]
+    },
+    "18F__identity-idp": {
+        "owner": "18F",
+        "project": "identity-idp",
+        "files": [
+            "lib/feature_management.rb"
+        ],
+        "regex": [
+            "\\s*def\\s+self\\.([\\w_]+)\\?"
+        ]
+    },
+    "devgateway__ocvn": {
+        "owner": "devgateway",
+        "project": "ocvn",
+        "files": [
+            "persistence-mongodb/src/main/java/org/devgateway/ocds/persistence/mongo/flags/ReleaseFlags.java"
+        ],
+        "regex": [
+            "\\s*private\\s+Flag\\s+(\\w+);"
+        ]
+    },
+    "ministryofjustice__prison-visits-2": {
+        "owner": "ministryofjustice",
+        "project": "prison-visits-2",
+        "files": [
+            "."
+        ],
+        "regex": [
+            "\\s*def\\s+self\\.([\\w_]+)_enabled\\?",
+            "\\s*def\\s+([\\w_]+)_enabled\\?"
+        ]
+    },
+    "ccrpjournal__clinicalresearch": {
+        "owner": "ccrpjournal",
+        "project": "clinicalresearch",
+        "files": [
+            "."
+        ],
+        "regex": [
+            "\\s*enforceDevFeature\\(\\\"(\\w+)\\\"\\);",
+            "\\s*assertDevFeatureEnabled\\(\\\"(\\w+)\\\"\\);"
+        ]
+    },
+    "Yoast__javascript": {
+        "owner": "Yoast",
+        "project": "javascript",
+        "files": [
+            "."
+        ],
+        "regex": [
+            ".*isFeatureEnabled\\(\\s*\\\"(\\w+)\\\"\\s*\\)"
+        ]
+    },
+    "rafaeljesus__newww": {
+        "owner": "rafaeljesus",
+        "project": "newww",
+        "files": [
+            "."
+        ],
+        "regex": [
+            ".*env.FEATURE_([\\w_]+)"
+        ]
+    },
+    "navikt__modiapersonoversikt": {
+        "owner": "navikt",
+        "project": "modiapersonoversikt",
+        "files": [
+            "src/mock/featureToggle-mock.ts"
+        ],
+        "regex": [
+            "\\s*case\\s+FeatureToggles\\.(\\w+):",
+            "\\s*case\\s+'([\\w]+)':"
+        ]
+    },
+    "Opentrons__opentrons": {
+        "owner": "Opentrons",
+        "project": "opentrons",
+        "files": [
+            "api/src/opentrons/config/feature_flags.py"
+        ],
+        "regex": [
+            "def\\s+([\\w_]+)\\(\\):"
+        ]
+    },
+    "woocommerce__woocommerce-ios": {
+        "owner": "woocommerce",
+        "project": "woocommerce-ios",
+        "files": [
+            "WooCommerce/Classes/System/FeatureFlag.swift"
+        ],
+        "regex": [
+            "\\s*case\\s+(?!null)(\\w+)"
+        ]
+    },
+    "DFE-Digital__get-help-to-retrain": {
+        "owner": "DFE-Digital",
+        "project": "get-help-to-retrain",
+        "files": [
+            "config/features.rb"
+        ],
+        "regex": [
+            "\\s*feature\\s*:(?!foo)([\\w_]+)"
+        ]
+    },
+    "tokio-rs__tokio": {
+        "owner": "tokio-rs",
+        "project": "tokio",
+        "files": [
+            "tokio/Cargo.toml"
+        ],
+        "regex": [
+            "([\\w-]+)\\s*=\\s*{.*optional"
+        ]
+    }
+}
