@@ -1,9 +1,7 @@
 # Capture The Feature Flag: Detecting Feature Flags in Open-Source
-### Jens Meinicke, Juan David Hoyos Rentería, Bogdan Vasilescu, Christian Kästner
-### International Conference on Mining Software Repositories (MSR), 2020
+Jens Meinicke, Juan David Hoyos Rentería, Bogdan Vasilescu, Christian Kästner *Capture The Feature Flag: Detecting Feature Flags in Open-Source* In Proceedings of the International Conference on Mining Software Repositories (MSR), 2020.
 
-This repository contains sublemental material for the MSR 2020 paper submission.
-
+This repository contains sublemental material for our MSR 2020 paper.
 
 ## Chapter 3 (Capturing Feature Flags): 
 The script for identifying feature flagging projects can be viewed here: [Commit Analysis.ipynb](https://github.com/CMUSTRUDEL/Capture-The-Feature-Flag/blob/master/Capturing-Feature-Flags/Commits%20Analysis.ipynb)
