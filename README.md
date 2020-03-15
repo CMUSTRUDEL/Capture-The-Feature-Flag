@@ -1,5 +1,15 @@
 # Capture The Feature Flag: Detecting Feature Flags in Open-Source
-Jens Meinicke, Juan David Hoyos Rentería, Bogdan Vasilescu, Christian Kästner *Capture The Feature Flag: Detecting Feature Flags in Open-Source* In Proceedings of the International Conference on Mining Software Repositories (MSR), 2020.
+
+```
+@inproceedings{meinicke2020flags,
+  author = {Jens Meinicke, Juan David Hoyos Rentería, Bogdan Vasilescu, Christian K{\"a}stner},
+  title = {{Capture The Feature Flag: Detecting Feature Flags in Open-Source}},
+  booktitle = {International Conference on Mining Software Repositories (MSR)},
+  year = {2020},
+  pages = {to appear},
+  publisher = {ACM},
+}
+```
 
 This repository contains sublemental material for our MSR 2020 paper.
 
