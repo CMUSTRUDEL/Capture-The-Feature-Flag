@@ -2,7 +2,7 @@
 
 ```
 @inproceedings{meinicke2020flags,
-  author = {Jens Meinicke, Juan David Hoyos Rentería, Bogdan Vasilescu, Christian K{\"a}stner},
+  author = {Jens Meinicke, Juan Hoyos, Bogdan Vasilescu, Christian K{\"a}stner},
   title = {{Capture The Feature Flag: Detecting Feature Flags in Open-Source}},
   booktitle = {International Conference on Mining Software Repositories (MSR)},
   year = {2020},
